@@ -1,4 +1,6 @@
 # web-dev-style-guide
+## Clarification
+This is just a draft of Formative coding style guide. It needs to be discussed and refined. You are totally ok to disagree with any part of the guide below
 
 ## General
 * Indentation
@@ -118,6 +120,7 @@
 		cursor: pointer;
 	}
 	```
+	
 * Media Query
 	* Position them right below relevant elements. Do not put all of them in one file or at buttom of css file
 	
