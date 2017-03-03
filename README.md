@@ -1,6 +1,6 @@
 # Web Dev Style Guide
 ## Clarification
-This is just a draft of Formative coding style guide. It needs to be discussed and refined. You are totally ok to disagree with any part of the guide below
+This is just a draft of Formative coding style guide. It needs to be discussed and refined. You are totally ok to disagree with any part of the guide below. You are welcome to add more coding style guide to this file
 
 ## General
 * Indentation
@@ -44,14 +44,14 @@ This is just a draft of Formative coding style guide. It needs to be discussed a
 * SEO
 	```
 	<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <!-- SEO -->
-    <title>Style Guide</title>
-    <meta name="keywords" content="your keywords">
-    <meta name="description" content="your description">
-    <meta name="author" content="author,email address">
-</head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!-- SEO -->
+		<title>Style Guide</title>
+		<meta name="keywords" content="your keywords">
+		<meta name="description" content="your description">
+		<meta name="author" content="author,email address">
+	</head>
 	```
 	
 * Viewport
