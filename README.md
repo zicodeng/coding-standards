@@ -1,4 +1,4 @@
-# Web Dev Style Guide
+# Coding Standards
 ## Clarification
 This is just a draft of Formative coding style guide. It needs to be discussed and refined. You are totally ok to disagree with any part of the guide below. You are welcome to add more coding style guide to this file
 
