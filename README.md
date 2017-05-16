@@ -187,13 +187,14 @@
 		```
 	* Put spaces on both sides of the opening and closing parenthesis of `if`, `elseif`, `foreach`, `for`, and `switch` blocks
 		* For example: `foreach ( $foo as $bar ) { ...` 
-	* When defining a function, do it like so:
-		`function my_function( $param1 = 'foo', $param2 = 'bar' ) { ...`
-	* When calling a function, do it like so:
-		`my_function( $param1, func_param( $param2 ) );`
-	* When performing logical comparisons, do it like so:
-		`if ( ! $foo ) { ...`
-	* When type casting, do it like so:
+	* When defining a function
+		* For example: `function my_function( $param1 = 'foo', $param2 = 'bar' ) { ...`
+	* When calling a function
+		* For example: `my_function( $param1, func_param( $param2 ) );`
+	* When performing logical comparisons
+		* For example: `if ( ! $foo ) { ...`
+	* When type casting
+		* For example:
 		```
 		foreach ( (array) $foo as $bar ) { ...
 		$foo = (boolean) $bar;
@@ -212,6 +213,28 @@
 		```
 		
 * Naming Conventions
+	* Use lowercase letters in variable, action, and function names (never `camelCase`). Separate words via underscores. Don’t  		  abbreviate variable names unnecessarily; let the code be unambiguous and self-documenting
+		* For example: `function some_name( $some_variable ) { [...] }`
+	* Class names should use capitalized words separated by underscores. Any acronyms should be all upper case
+		* For example:
+		```
+		class Walker_Category extends Walker { [...] }
+		class WP_HTTP { [...] }
+		```
+	* Constants should be in all upper-case with underscores separating words
+	* Files should be named descriptively using lowercase letters. Hyphens should separate words
+	
+* Yoda Conditions
+	* When doing logical comparisons involving variables, always put the variable on the right side and put constants, literals, or 	  function calls on the left side. If neither side is a variable, the order is not important
+	* For example:
+	```
+	if ( true == $the_force ) {
+	    $victorious = you_will( $be );
+	}
+	```
+	
+* Credits
+	* wordpress.org
 	
 ## React.js
 * Component Name
