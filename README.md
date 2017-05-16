@@ -1,6 +1,4 @@
 # Coding Standards
-## Clarification
-This is just a draft of Formative coding style guide. It needs to be discussed and refined. You are totally ok to disagree with any part of the guide below. You are welcome to add more coding style guide to this file
 
 ## General
 * Indentation
@@ -142,7 +140,15 @@ This is just a draft of Formative coding style guide. It needs to be discussed a
 * Constant
 	* use all uppercase to name all constants such as `MY_CONSTANT`
 	
-## PHP
+## WordPress PHP
+* Single and Double Quotes
+	* If you are evaluating something in the string, use double quotes
+	* For example: `echo "<a href='$link' title='$linktitle'>$linkname</a>";`
+	* If you are not evaluating anything in the string, use single quotes
+	* For example: `echo '<a href="/static/link" title="Yeah yeah!">Link name</a>';`
+	* You should almost never have to escape quotes in a string, because you can just alternate your quoting style
+	* Dynamic text that goes into HTML attributes should be run through `esc_attr()` for security reasons
+	
 * Inline Code
 	* Make sure to include semi-colon at the end
 	* For example: `<p><?php echo "Hello World"; ?></p>`
@@ -165,6 +171,47 @@ This is just a draft of Formative coding style guide. It needs to be discussed a
 			statement;
 		} ?>
 	```
+	
+* Use `elseif` not `else if`
+
+* Space Usage
+	* Always put spaces after commas, and on both sides of logical, comparison, string and assignment operators
+		* For example:
+		```
+		x == 23
+		foo && bar
+		! foo
+		array( 1, 2, 3 )
+		$baz . '-5'
+		$term .= 'X'
+		```
+	* Put spaces on both sides of the opening and closing parenthesis of `if`, `elseif`, `foreach`, `for`, and `switch` blocks
+		* For example: `foreach ( $foo as $bar ) { ...` 
+	* When defining a function, do it like so:
+		`function my_function( $param1 = 'foo', $param2 = 'bar' ) { ...`
+	* When calling a function, do it like so:
+		`my_function( $param1, func_param( $param2 ) );`
+	* When performing logical comparisons, do it like so:
+		`if ( ! $foo ) { ...`
+	* When type casting, do it like so:
+		```
+		foreach ( (array) $foo as $bar ) { ...
+		$foo = (boolean) $bar;
+		```
+	* When referring to array items, only include a space around the index if it is a variable
+		* For example: 
+		```
+		$x = $foo['bar']; // correct
+		$x = $foo[ 'bar' ]; // incorrect
+
+		$x = $foo[0]; // correct
+		$x = $foo[ 0 ]; // incorrect
+
+		$x = $foo[ $bar ]; // correct
+		$x = $foo[$bar]; // incorrect
+		```
+		
+* Naming Conventions
 	
 ## React.js
 * Component Name
