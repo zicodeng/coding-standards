@@ -143,9 +143,9 @@
 ## WordPress PHP
 * Single and Double Quotes
 	* If you are evaluating something in the string, use double quotes
-	* For example: `echo "<a href='$link' title='$linktitle'>$linkname</a>";`
+		* For example: `echo "<a href='$link' title='$linktitle'>$linkname</a>";`
 	* If you are not evaluating anything in the string, use single quotes
-	* For example: `echo '<a href="/static/link" title="Yeah yeah!">Link name</a>';`
+		* For example: `echo '<a href="/static/link" title="Yeah yeah!">Link name</a>';`
 	* You should almost never have to escape quotes in a string, because you can just alternate your quoting style
 	* Dynamic text that goes into HTML attributes should be run through `esc_attr()` for security reasons
 	
