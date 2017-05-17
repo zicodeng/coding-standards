@@ -145,7 +145,7 @@
 * Constant
 	* use all uppercase to name all constants such as `MY_CONSTANT`
 	
-## WordPress PHP
+## PHP
 * Single and Double Quotes
 	* If you are evaluating something in the string, use double quotes
 		* For example: `echo "<a href='$link' title='$linktitle'>$linkname</a>";`
