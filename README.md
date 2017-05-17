@@ -41,6 +41,9 @@
 	* id, class, name, data-xxx, src/for/type/href, title/alt, aria-xxx, role
 	* For example: `<a id="..." class="..." data-modal="toggle" href="###"></a>`
 	
+* Attribute Naming Convention
+	* Use hyphen "-" to separate words
+	
 * Quotation
 	* Use double quotes for outer quotes
 	* Use single quotes for inner quotes
