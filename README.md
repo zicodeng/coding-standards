@@ -39,7 +39,7 @@
 * Attribute Naming Convention
 	* Use hyphen "-" to separate words
 	
-* Quotation
+* Single or Double Quotes
 	* Use double quotes for outer quotes
 	* Use single quotes for inner quotes
 	* All attributes must be quoted
@@ -141,7 +141,7 @@
 	* use all uppercase to name all constants such as `MY_CONSTANT`
 	
 ## PHP
-* Single and Double Quotes
+* Single or Double Quotes
 	* If you are evaluating something in the string, use double quotes
 		* For example: `echo "<a href='$link' title='$linktitle'>$linkname</a>";`
 	* If you are not evaluating anything in the string, use single quotes
