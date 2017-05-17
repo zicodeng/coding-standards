@@ -200,7 +200,7 @@
 		foreach ( (array) $foo as $bar ) { ...
 		$foo = (boolean) $bar;
 		```
-	* When referring to array items, only include a space around the index if it is a variable
+	* When referring to **array items**, only include a space around the index if it is a variable
 		* For example: 
 		```
 		$x = $foo['bar']; // correct
