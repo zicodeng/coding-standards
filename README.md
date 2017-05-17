@@ -47,6 +47,8 @@
 * Quotation
 	* Use double quotes for outer quotes
 	* Use single quotes for inner quotes
+	* All attributes must be quoted
+	* For example: `<input type="text" name="email" disabled="disabled" />`
 
 * SEO
 	```
@@ -158,7 +160,8 @@
 	
 * Block Code
 	* Put `<?php` and `?>` tags in its own line
-	* Do not indent it
+	* Closing PHP blocks should match the same indentation level as the opening block
+	* Do not indent its containing code
 	* For example:
 	```
 	<!-- Recommended -->
