@@ -140,6 +140,11 @@
 * Constant
 	* use all uppercase to name all constants such as `MY_CONSTANT`
 	
+## jQuery
+* Variable
+	* Follow JavaScript variable naming convention
+	* If it is a jQuery selector, start the variable name with $ such as `$mContainer = $(".container");
+	
 ## PHP
 * Single or Double Quotes
 	* If you are evaluating something in the string, use double quotes
